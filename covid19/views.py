@@ -10,13 +10,19 @@ from django.http import HttpResponse
 
 from django.db.models import Sum
 
+def numActiveCase(x,y,z):
+    case=x-(y+z)
+    return case 
 
 
 
 def index(request):
     ncas=cityStat.objects.aggregate(Sum('Ncas'))
+    ndeces=cityStat.objects.aggregate(Sum('Ndeces'))
+    ngueris=cityStat.objects.aggregate(Sum('Ngueris'))
+    casActif=numActiveCase(ncas['Ncas__sum'],ndeces['Ndeces__sum'],ngueris['Ngueris__sum'])  
     title='HOME'
-    return render(request,'index.html',{'titre':title,'ncas':ncas})
+    return render(request,'index.html',{'titre':title,'ncas':ncas,'ndeces':ndeces,'ngueris':ngueris,'casActif':casActif,})
 
 
 def stat(request):

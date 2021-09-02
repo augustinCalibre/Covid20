@@ -391,7 +391,7 @@ body {
 .wrapper {
 	position: relative;
     z-index: 20;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 .eicon {
     display: inline-block;
