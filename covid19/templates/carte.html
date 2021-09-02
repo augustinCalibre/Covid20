@@ -8,11 +8,16 @@
 
 {% block title %}
 {{titre}}
-{%endblock%}
+{% endblock title %}
+
+
+{% block stylesheets %}
+{{ block.super }}
+{% endblock stylesheets %}
 
 
 
-{% block content %}
+{% block carte %}
 <!-- <div class="map">
 <div> -->
 <div class="map-content">
@@ -161,10 +166,11 @@
 
 </div>
 
-{% endblock content %}
+{% endblock carte %}
 
 {% block javascripts %}
 {{ block.super }}
 <!-- Chart.js -->
 <script src="/static/js/main.js"></script>
+
 {% endblock javascripts %}

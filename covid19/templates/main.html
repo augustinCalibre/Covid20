@@ -1,128 +1,74 @@
 {% load static%}
 
 <!DOCTYPE html>
-
 <html lang="en">
+
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'css/main.css' %}">
-    <link rel="stylesheet" href="{% static 'css/map.css' %}">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Infectious | Coronavirus (COVID 19) Medical HTML Template</title>
+{% block heads %}
 
-    
+{% endblock heads %}
 
-    {% block stylesheets %}
-        <!-- link font familly -->
 
-    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
-      <!-- Bootstrap -->
-      <link href="/static/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-      <!-- Font Awesome -->
-      <link href="/static/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-      <!-- NProgress -->
-      <link href="/static/vendors/nprogress/nprogress.css" rel="stylesheet">
-      <!-- bootstrap-daterangepicker -->
-      <link href="/static/vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
-      <!-- iCheck -->
-      <link href="/static/vendors/iCheck/skins/flat/green.css" rel="stylesheet">
-      <!-- bootstrap-progressbar -->
-      <link href="/static/vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
-      <!-- JQVMap -->
-      <link href="/static/vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet"/>
-    {% endblock stylesheets %}
-    <!-- Custom Theme Style -->
-    <link href="/static/build/css/custom.css" rel="stylesheet">
-  
-    <title>{% block title %} {%endblock%}|COVID APP</title>
+{% include "links.html" %}
 </head>
 <body>
 
-<!--=== Loader Start ======-->
+{% comment %} chargement de la page  {% endcomment %}
 <div id="loader-overlay">
-    <div class="loader">
-      <div class="loader-inner"></div>
-    </div>
+  <div class="loader">
+    <div class="loader-inner"></div>
   </div>
-  <!--=== Loader End ======-->
-
-
-    <div class="bg4"></div>
-    <div class="bg"></div>
-    <div class="bg bg2"></div>
-    <div class="bg bg3"></div>
-<div class="container">
-    
-    <div class="navBar">
-        <div class="navHeader">
-            <h3>Covid19 App</h3>
-            <p>Langue  |<a href="#">FR</a>|<a href="#">EN</a></p>
-        </div>
-
-        <div class="navMain">
-            <a href="home">Acceuil</a>
-            <a href="statistique">Statistique</a>
-            <a href="carte">cartographie</a>
-            <a href="#">Prevention</a>
-            <a href="#">Suggestion</a>
-            <a href="#">Contact</a>
-        </div>
-
-    </div>
-    
-    {% block content %}
-        
-    {% endblock content %}
-        
-    {% block javascripts %}
-    <!-- jQuery -->
-    <script src="/static/vendors/jquery/dist/jquery.min.js"></script>
-    <!-- Bootstrap -->
-    <script src="/static/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
-    <!-- FastClick -->
-    <script src="/static/vendors/fastclick/lib/fastclick.js"></script>
-    <!-- NProgress -->
-    <script src="/static/vendors/nprogress/nprogress.js"></script>
-    <!-- bootstrap-progressbar -->
-    <script src="/static/vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
-    <!-- iCheck -->
-    <script src="/static/vendors/iCheck/icheck.min.js"></script>
-    <!-- bootstrap-daterangepicker -->
-    <script src="/static/vendors/moment/min/moment.min.js"></script>
-    <script src="/static/vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
-    <!-- bootstrap-wysiwyg -->
-    <script src="/static/vendors/bootstrap-wysiwyg/js/bootstrap-wysiwyg.min.js"></script>
-    <script src="/static/vendors/jquery.hotkeys/jquery.hotkeys.js"></script>
-    <script src="/static/vendors/google-code-prettify/src/prettify.js"></script>
-    <!-- jQuery Tags Input -->
-    <script src="/static/vendors/jquery.tagsinput/src/jquery.tagsinput.js"></script>
-    <!-- Switchery -->
-    <script src="/static/vendors/switchery/dist/switchery.min.js"></script>
-    <!-- Select2 -->
-    <script src="/static/vendors/select2/dist/js/select2.full.min.js"></script>
-    <!-- Parsley -->
-    <script src="/static/vendors/parsleyjs/dist/parsley.min.js"></script>
-    <!-- Autosize -->
-    <script src="/static/vendors/autosize/dist/autosize.min.js"></script>
-    <!-- jQuery autocomplete -->
-    <script src="/static/vendors/devbridge-autocomplete/dist/jquery.autocomplete.min.js"></script>
-    <!-- starrr -->
-    <script src="/static/vendors/starrr/dist/starrr.js"></script>
-  {% endblock %}
-  <script src="/static/build/js/custom.js"></script>
-    <!--=== Javascript Plugins ===-->
-<script src="/static/assets/js/jquery.min.js"></script>
-<script src="/static/assets/js/plugins.js"></script>
-<script src="/static/assets/js/master.js"></script>
-<!--=== Javascript Plugins End ===-->
 </div>
 
+
+
+
+
+{% include "nav.html" %}
+
+{% block welcome %}{% endblock %}
+{% block About %} {% endblock %}
+
+  
+{% block statistique %}{% endblock statistique %}
+{% block carte %}{% endblock carte %}
+
+        
+    
+
+
+{% block symptom%}{% endblock%}
+{% block prevention%} {% endblock %}
+{% block question %}{% endblock question %}
+
+  
+   
+
+</div>
+<!--=== Wrapper End ===-->
+
+<!--=== Javascript Plugins ===-->
+{% include "linkjs.html" %}
+<!--=== Javascript Plugins End ===-->
+
+
+{% block javascripts %}
+{% endblock javascripts %}
+
+
+</body>
+
+<!-- Mirrored from www.incognitothemes.com/infectious/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Sep 2021 09:32:40 GMT -->
+</html>
 
 
    
 
 
-}
 
-</body>
-</html>
+

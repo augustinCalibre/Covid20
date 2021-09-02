@@ -1,0 +1,44 @@
+{% extends 'main.html' %}
+
+{% block title %}
+
+{%endblock%}
+
+
+{% block symptom %}
+  <!--=== Symptoms Start ===-->
+  <section class="light-bg" id="symptom">
+    <div class="container">
+        <div class="row">
+      <div class="col-md-6 heading-style-one box-title">
+                <h6 class="default-color text-uppercase">Coronavirus symptoms</h6>
+                <h2><span class="font-700">what are they and should I call the doctor?</span></h2>
+        <p>It is caused by a member of the coronavirus family that has never been encountered before. Like other coronaviruses, it has transferred to humans from animals.</p>
+                 <div class="welcome-style-two mt-30">
+                     <div class="thin-border-purple thin-borders pull-left"></div>
+                      <p class="pull-left">According to the WHO, the most common symptoms of Covid-19 are fever, tiredness and a dry cough. Some patients may also have a runny nose, sore throat, nasal congestion and aches and pains or diarrhoea.</p>
+                  </div>
+            </div>
+      <div class="col-md-6">
+                <img class="img-responsive symptom-img" src="/static/assets/images/symptom.png" alt="symptoms"/>
+            </div>
+        </div>
+    </div>
+</section>
+<!--=== Symptoms End ===-->
+<section class="parallax-bg fixed-bg pt-200 pb-200" style="background-image: url(/static/assets/images/background/parallax-bg.jpg);">
+    <div class="gradient-overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 col-md-offset-5">
+                <div class="center-layout">
+              <div class="v-align-middle"> <a class="popup-youtube" href="https://www.youtube.com/watch?v=sU3FkzUKHXU">
+                <div class="play-button"><i class="eicon mdi mdi-play"></i> </div>
+                </a> </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% include "footer.html" %}
+{% endblock %}

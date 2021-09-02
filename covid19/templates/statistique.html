@@ -3,16 +3,26 @@
 
 {% block title %}
 {{titre}}
-{%endblock%}
+{% endblock %}
+
+
+
+        
 {% block stylesheets %}
 {{ block.super }}
 {% endblock stylesheets %}
 
 
+{% block heads %}
+<link rel="stylesheet" href="/static/css/main.css">
+<link rel="stylesheet" href="/static/css/map.css">
+{% endblock heads %}
 
 
 
-{% block content %}
+
+
+{% block statistique %}
 <div class="chartsDiplay" role="main">
 
 
@@ -44,10 +54,11 @@
 <input type="hidden" id="data" value="{{ncas}}">
 
 
-{% endblock content %}
+{% endblock statistique %}
 
 {% block javascripts %}
 {{ block.super }}
 <!-- Chart.js -->
+<script src="/static/build/js/custom.js"></script>
 <script src="/static/vendors/Chart.js/dist/Chart.min.js"></script>
 {% endblock javascripts %}

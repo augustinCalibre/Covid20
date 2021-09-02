@@ -33,4 +33,21 @@ def cartographie(request):
     
 
     return render(request,'carte.html',{'titre':title,'ncas':ncas})
+
+
+def About(request):
   
+    return render(request,'AboutTemplate.html')
+
+def symptom(request):
+  
+    return render(request,'symptom.html')
+
+def prevention(request):
+  
+    return render(request,'prevention.html')
+
+
+def question(request):
+  
+    return render(request,'question.html')

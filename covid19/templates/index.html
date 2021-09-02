@@ -5,8 +5,8 @@
 {%endblock%}
 
 
-{% block content %}
-<div class="content">
+{% block welcome%}
+<!-- <div class="content">
     <div class="blockIntro">
 
 
@@ -19,7 +19,7 @@
         <img src="static/images/covid.png" alt="" srcset="">
         <!-- <iframe width="320" height="690" src="https://www.covid19-ci.info/2fRL7EeOQlU.html" frameborder="0"></iframe> -->
 
-        
+<!--         
     </div>
 
     <div class="blockIntro1">
@@ -37,8 +37,116 @@
 
     
     
-</div>
-{% endblock content %}
+</div> --> 
+<section class="home-slider" id="home">
+    <div class="default-slider slick">
+      <div class="slide">
+        <div class="slide-img parallax-effect" style="background:url(/static/assets/images/slides/home-bg-1.jpg) center center / cover scroll no-repeat;"></div>
+        <div class="hero-text-wrap">
+          <div class="hero-text">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <h3 class="upper-case dark-color font-600">Infectious</h3>
+                  <h1 class="upper-case font-800 default-color">Covid 19</h1>
+                  <p class="dark-color">Coronavirus disease (COVID-19) is an infectious disease caused by a new virus. The disease causes respiratory illness (like the flu) with symptoms such as a cough, fever, and in more severe cases, difficulty breathing.</p>
+                  <p class="text-left mt-30"><a class="btn btn-color btn-circle btn-md">How to Protect</a> </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="slide-img parallax-effect" style="background:url(/static/assets/images/slides/home-bg-2.jpg) center center / cover scroll no-repeat;"></div>
+        <div class="hero-text-wrap">
+          <div class="hero-text">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-7">
+                  <h3 class="upper-case dark-color font-600">Stay Home</h3>
+                  <h1 class="upper-case font-800 green-color">Stay Safe</h1>
+                  <p class="dark-color">Italy reported 683 new deaths in the coronavirus pandemic, bringing its total to 7,503. Spain, meanwhile, recorded more than 700 deaths over the past 24 hours.</p>
+                  <p class="text-left mt-30"><a class="btn btn-green btn-circle btn-md">About Virus</a> </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--=== Hero Slider End ===-->
+
+  
+
+  <!--=== Counter Start ===-->
+  <section class="parallax-bg fixed-bg pt-70 pb-70" data-stellar-background-ratio="0.2" style="background-image: url(/static/assets/images/background/pattern-parallax.jpg);">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <div class="counter-wrap">
+            <h2><span class="counter">940,735</span></h2>
+            <h3>Total Cases</h3>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="counter-wrap">
+            <h2><span class="counter">47,518</span></h2>
+            <h3>Total Deaths</h3>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="counter-wrap">
+            <h2><span class="counter">196,221</span></h2>
+            <h3>Total Recovered</h3>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="counter-wrap">
+            <h2><span class="counter">696,996</span></h2>
+            <h3>Active Cases</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--=== Counter End ===-->
+
+  <!--=== Transmission Start ===-->
+  <section>
+  	<div class="container">
+  		<div class="row">
+  			<div class="col-md-6 heading-style-one box-title-two text-left">
+  				<h6 class="red-color text-uppercase">How Coronavirus is Spread</h6>
+  				<h2><span class="font-700">Transmission of (COVID-19)</h2>
+          <p>This version updates the 27 March publication by providing definitions of droplets by particle size and adding three relevant publications. </p>
+  			</div>
+  		</div>
+
+      <div class="row mt-50">
+  			<div class="col-md-4 main-service-box text-center col-sm-4 feature-box">
+  				<i class="infection-icon img-icon"></i>
+  				<h4>Human Contact</h4>
+  				<p>Integer purus ipsum, auctor vitae posuere et, consectetur ac leo. Pellentesque sit amet risus sagittis, fermentum ligula.</p>
+  			</div>
+  			<div class="col-md-4 main-service-box text-center col-sm-4 feature-box">
+  				<i class="earth-icon img-icon"></i>
+  				<h4>Air Transmission</h4>
+  				<p>Integer purus ipsum, auctor vitae posuere et, consectetur ac leo. Pellentesque sit amet risus sagittis, fermentum ligula.</p>
+  			</div>
+  			<div class="col-md-4 main-service-box text-center col-sm-4 feature-box">
+  				<i class="food-icon img-icon"></i>
+  				<h4>Contaminated</h4>
+  				<p>Integer purus ipsum, auctor vitae posuere et, consectetur ac leo. Pellentesque sit amet risus sagittis, fermentum ligula.</p>
+  			</div>
+  		</div>
+  	</div>
+  </section>
+  <!--=== Transmission End ===-->
+{% include "footer.html" %}
+{% endblock welcome %}
     
 
 
