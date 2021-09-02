@@ -20,7 +20,7 @@ def index(request):
 
 
 def stat(request):
-    ncas=cityStat.objects.aggregate(Sum('Ncas'))
+    ncas=serializers.serialize("json",cityStat.objects.all())
     title='statistique'
     return render(request,'statistique.html',{'titre':title,'ncas':ncas})
 
