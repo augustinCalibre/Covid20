@@ -12,4 +12,5 @@ urlpatterns = [
     path('symptom',views.symptom),
     path('prevention',views.prevention),
     path('question',views.question),
+    path('Covidworld',views.Covidworld),
 ]

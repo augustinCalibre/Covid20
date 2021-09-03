@@ -9,7 +9,7 @@ function nummcas(tab,tab2,tab3) {
     
     const res=[]
     for (let i = 0; i < tab.length; i++) {
-        const dif=tab[i]-tab2[i]-tab3[i];
+        const dif=tab[i]-(tab2[i]+tab3[i]);
         res.push(dif);
     
     }

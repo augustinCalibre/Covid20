@@ -42,18 +42,26 @@ def cartographie(request):
 
 
 def About(request):
+    title='A propos'
   
-    return render(request,'AboutTemplate.html')
+    return render(request,'AboutTemplate.html',{'titre':title})
 
 def symptom(request):
+    title='Symptom'
   
-    return render(request,'symptom.html')
+    return render(request,'symptom.html',{'titre':title})
 
 def prevention(request):
-  
-    return render(request,'prevention.html')
+    title='prevention'
+    return render(request,'prevention.html',{'titre':title})
 
 
 def question(request):
-  
-    return render(request,'question.html')
+    title='question'
+    return render(request,'question.html',{'titre':title})
+
+
+def Covidworld(request):
+    title='World MAP'
+    return render(request,'world.html',{'titre':title})
+
