@@ -25,8 +25,8 @@ const changeResultBodies = (item, pointerPosition) => {
     const new_cursorX = cursorX - x;
     const new_cursorY = cursorY - y;
 
-    modal.style.left = `${new_cursorX + 20}px`;
-    modal.style.top = `${new_cursorY}px`;
+    modal.style.left = `${new_cursorX + 120}px`;
+    modal.style.top = `${new_cursorY+20}px`;
 
     modalHeader.textContent = item.fields.ville;
     modalUl.innerHTML = lis;
